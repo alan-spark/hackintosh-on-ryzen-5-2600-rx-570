@@ -1,0 +1,9 @@
+Open Terminal
+Type "cd /Applications/Discord.app/Contents/(your-mac-name-here)"
+Hit Enter
+Type "echo "MKL_DEBUG_CPU_TYPE=5 ./Discord" > discord_"
+Now Right click on discord select show package contents open infoplist with a plist editor to make the change.
+Follow these steps: 
+Property List - "Executable file", Property Type - "String", Property Value - "discord_".
+Save the plist and restart the discord.
+Now you should be conncet normally.
