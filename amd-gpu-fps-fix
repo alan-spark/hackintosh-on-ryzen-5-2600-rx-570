@@ -1,0 +1,5 @@
+This is an issue with Algrey's PAT patch (and to a much lesser extent, with Shaneee's).
+Look under Kernel -> Patch in your config.plist file. Find the two patches called algrey - _mtrr_update_action fix PAT and Shaneee - _mtrr_update_action fix PAT. They should be the last two.
+If you are on the TRX40 platform, delete both of these patches.
+Otherwise, set the Enabled value of algrey's patch to false, and set the same key to true on Shaneee's patch.
+Note that Shaneee's patch can affect HDMI/DP audio quality on some cards and does not work on NVIDIA GPUs.
